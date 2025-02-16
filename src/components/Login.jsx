@@ -34,7 +34,7 @@ const Login = ({ onLogin }) => {
     const data = { email, password };
 
     try {
-      const response = await axios.post("http://localhost:3000/login", data);
+      const response = await axios.post("https://assignment17-backend.onrender.com/login", data);
       alert(response.data.message);
       onLogin();
       navigate("/products");
